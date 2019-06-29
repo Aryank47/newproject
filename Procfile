@@ -1,0 +1,1 @@
+web: gunicorn movfind.wsgi --log-file -
