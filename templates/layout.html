@@ -126,7 +126,7 @@ aside {
   padding: 0;
 }
 .navbar-default {
-  background-color: white;
+  background-color: black;
   border-color: rgba(34, 34, 34, 0.05);
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.35s;
@@ -171,7 +171,7 @@ aside {
 }
 @media (min-width: 768px) {
   .navbar-default {
-    background-color: transparent;
+   
     border-color: rgba(255, 255, 255, 0.3);
   }
   .navbar-default .navbar-header .navbar-brand {
@@ -529,7 +529,7 @@ body {
                 <input type="text" name="title" id="search-input" class="form-control"
                        placeholder="Search For Movies or Actors"
                        onkeyup="start_timer()" size="55" autocomplete="off" required/>
-                <input type="submit" class="btn btn-default" name="search" value="Submit"/>
+                <input type="submit" class="btn btn-default" name="search" value="search"/>
 
                 <div class="searchlistdiv"
                      style="position:absolute;top:42px;left:295px;user-select:none;display:none;width: 380px;"
@@ -613,7 +613,7 @@ body {
             </ul>
         </div>
         </div>
-        
+        </nav>
 
 <script>
     function getCookie(name) {
@@ -734,7 +734,8 @@ body {
         });
     }
 </script>
-    </nav>
+
+    
   {% block content %}
   {% endblock %}
   
