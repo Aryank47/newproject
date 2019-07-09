@@ -25,7 +25,7 @@ SECRET_KEY = 'j7w=9!)9&x%sv2j_^mt%eqk=w(oi#j_*==u6^c(f^m4hvdjf6_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sitmoviehunter.herokuapp.com']
+ALLOWED_HOSTS = ['sitmoviehunter.herokuapp.com','localhost']
 
 
 # Application definition

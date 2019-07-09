@@ -40,7 +40,7 @@ def user_register(request):
         else:
             return render(request, 'register.html', {'error': 'Invalid input!', 'form': UserCreationForm()})
     else:
-        return render(request, "register.html", {'form': UserCreationForm()})
+        return render(request, "home.html", {'form': UserCreationForm()})
 
 
 def facebook(request):
