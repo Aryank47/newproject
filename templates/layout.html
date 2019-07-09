@@ -511,48 +511,6 @@ body {
     </style>
 </head>
 <body>
-  <script >
-  var slideIndex = 0; 
-showSlides(); // call showslide method 
-   
-function showSlides() 
-{ 
-    var i; 
-  
-    // get the array of divs' with classname image-sliderfade 
-    var slides = document.getElementsByClassName("header");  
-      
-    // get the array of divs' with classname dot 
-    var dots = document.getElementsByClassName("dot");  
-  
-    for (i = 0; i < slides.length; i++) { 
-        // initially set the display to  
-        // none for every image. 
-        slides[i].style.display = "none";  
-    } 
-   
-     // increase by 1, Global variable 
-    slideIndex++;  
-   
-     // check for boundary 
-    if (slideIndex > slides.length)  
-    { 
-        slideIndex = 1; 
-    } 
-   
-    for (i = 0; i < dots.length; i++) { 
-        dots[i].className = dots[i].className. 
-                            replace(" active", ""); 
-    } 
-   
-    slides[slideIndex - 1].style.display = "block"; 
-    dots[slideIndex - 1].className += " active"; 
-  
-    // Change image every 2 seconds 
-    setTimeout(showSlides, 2000);  
-} 
-
-</script>
 <body id="page-top">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -613,13 +571,13 @@ function showSlides()
                             <li>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        Login via
+                                        {% comment %} Login via
                                         <div class="social-buttons">
                                             <button type="button" class="btn btn-fb" onclick="login()">
                                                 <span class="fa fa-facebook"></span> Facebook
                                             </button>
                                         </div>
-                                        or
+                                        or {% endcomment %}
                                         <form class="form" role="form" method="post" action="/user/login/"
                                               accept-charset="UTF-8" id="login-nav">
                                             {% csrf_token %}
