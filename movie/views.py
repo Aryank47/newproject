@@ -80,7 +80,7 @@ def detail(request, model, id):
                     items.append(movie)
     except:
         return render(request, '404.html')
-    return render(request, '{}_list.html'.format(label), {'items': items, 'number': len(items), 'object': object})
+    return render(request, '{}_list1.html'.format(label), {'items': items, 'number': len(items), 'object': object})
 
 
 def whole_list(request, model, page):
@@ -101,7 +101,7 @@ def whole_list(request, model, page):
             pages.append(i)
     data = {'items': objects[10 * (page - 1):last_item_index], 'current_page': page, 'page_number': total_page,
             'pages': pages}
-    return render(request, '{}_list.html'.format(model.get_name()), data)
+    return render(request, '{}_list1.html'.format(model.get_name()), data)
 
 
 def search(request, item, query_string, page):
