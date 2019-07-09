@@ -24,5 +24,5 @@ urlpatterns = [
     url(r'^user/', include('user.urls')),
     url(r'^$', views.index, name='index'),
     url(r'^home/$', views.home, name='home'),
-    #url(r'.*', lambda request: render(request, '404.html'), name='404'),
+    url(r'.*', lambda request: render(request, '404.html'), name='404'),
 ]
